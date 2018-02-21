@@ -1,0 +1,24 @@
+allprojects {
+	apply plugin: 'java'
+
+	repositories {
+		jcenter()
+	}
+	dependencies {
+		compile group: 'org.springframework.boot', name: 'spring-boot-starter', version: '1.5.10.RELEASE'
+		testCompile 'junit:junit:4.12'
+	}
+
+}
+
+project(':address'){
+
+	dependencies {
+		compile project(':address:core')
+	}
+
+}
+
+dependencies {
+	compile project(':address')
+}

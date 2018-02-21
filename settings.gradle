@@ -1,0 +1,4 @@
+rootProject.name = 'spring-profile-behavior'
+
+include ':address'
+include ':address:core'
